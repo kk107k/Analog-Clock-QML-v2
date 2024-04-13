@@ -1028,16 +1028,16 @@
 	"dependencies" : 
 	[
 		{
+			"backtrace" : 0,
+			"id" : "appAnalog-Clock-QML-v2_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
 			"backtrace" : 70,
 			"id" : "appAnalog-Clock-QML-v2_tooling::@6890427a1f51a3e7e1df"
 		},
 		{
 			"backtrace" : 77,
 			"id" : "appAnalog-Clock-QML-v2_qmlimportscan::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 0,
-			"id" : "appAnalog-Clock-QML-v2_autogen::@6890427a1f51a3e7e1df"
 		},
 		{
 			"id" : "appAnalog-Clock-QML-v2_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
