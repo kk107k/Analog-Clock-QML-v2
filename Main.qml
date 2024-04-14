@@ -1,16 +1,16 @@
 import QtQuick
 
 Window {
-    width: 1000
-    height: 1000
+    width: 500
+    height: 500
     visible: true
     title: qsTr("Hello World")
 
     Clock
     {
         id: clock
-        width: 650
-        height: 650
+        width: 500
+        height: 500
     }
 
 }

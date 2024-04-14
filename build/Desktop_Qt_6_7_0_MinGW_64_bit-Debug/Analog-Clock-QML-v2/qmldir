@@ -4,4 +4,5 @@ prefer :/Analog-Clock-QML-v2/
 Main 1.0 Main.qml
 Clock 1.0 Clock.qml
 Analogs 1.0 Analogs.qml
+Buttons 1.0 Buttons.qml
 

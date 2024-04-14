@@ -778,6 +778,7 @@
 	"MOC_SKIP" : 
 	[
 		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp",
+		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp",
 		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Clock_qml.cpp",
 		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Main_qml.cpp",
 		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_qmlcache_loader.cpp",
@@ -806,6 +807,7 @@
 	"UIC_SKIP" : 
 	[
 		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp",
+		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp",
 		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Clock_qml.cpp",
 		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Main_qml.cpp",
 		"D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_qmlcache_loader.cpp",
