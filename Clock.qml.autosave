@@ -309,7 +309,7 @@ Item {
             }
         }
 
-
+        //
         Repeater {
             model: 60
             delegate: Rectangle {
@@ -328,6 +328,7 @@ Item {
             }
         }
 
+        // Hour Marker Texts
         Repeater {
             model: 12
             delegate: Text {
@@ -339,6 +340,7 @@ Item {
             }
         }
 
+        // Minute Marker Texts
         Repeater {
             model: 60
             delegate: Text {
@@ -351,6 +353,7 @@ Item {
             }
         }
 
+        // Hour hand
         Rectangle {
             id: hourHand
             width: 15
@@ -362,7 +365,7 @@ Item {
             visible: isHourHandVisible
             property bool dashLinesVisible: true
 
-
+            // Dash Circle for the hour hand
             Rectangle {
                 width: 80
                 height: 88
@@ -387,6 +390,7 @@ Item {
                     }
                 }
 
+                // Dashed line going through the dashed circle
                 Repeater {
                     model: 10
                     Rectangle {
@@ -399,7 +403,8 @@ Item {
                         visible: parent.parent.dashLinesVisible
                     }
                 }
-
+                
+                
                 MouseArea {
                     anchors.fill: parent
 
@@ -598,7 +603,7 @@ Item {
 
 
     }
-
+    // Update function for the time
     function updateClockTime() {
            hours = Math.floor(hourHand.rotation / 30);
            minutes = Math.floor(minuteHand.rotation / 6);
@@ -607,7 +612,7 @@ Item {
        }
 
 
-
+    // Clocks timer
     Timer {
         interval: 1000
         running: true

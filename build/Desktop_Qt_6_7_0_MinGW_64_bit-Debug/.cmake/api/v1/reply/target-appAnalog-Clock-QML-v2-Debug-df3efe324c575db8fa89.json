@@ -105,13 +105,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 40,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 35,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
@@ -1309,14 +1309,14 @@
 		},
 		{
 			"backtrace" : 95,
-			"path" : "Analogs.qml",
+			"path" : "Buttons.qml",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 96,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp",
 			"sourceGroupIndex" : 1
 		},
 		{
@@ -1389,7 +1389,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp.rule",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp.rule",
 			"sourceGroupIndex" : 3
 		},
 		{

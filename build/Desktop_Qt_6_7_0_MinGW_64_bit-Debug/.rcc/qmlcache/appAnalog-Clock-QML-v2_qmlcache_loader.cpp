@@ -19,13 +19,6 @@ namespace _0x5f_Analog_0x2d_Clock_0x2d_QML_0x2d_v2_Clock_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
-namespace _0x5f_Analog_0x2d_Clock_0x2d_QML_0x2d_v2_Analogs_qml { 
-    extern const unsigned char qmlData[];
-    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
-    const QQmlPrivate::CachedQmlUnit unit = {
-        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
-    };
-}
 namespace _0x5f_Analog_0x2d_Clock_0x2d_QML_0x2d_v2_Buttons_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -49,7 +42,6 @@ Q_GLOBAL_STATIC(Registry, unitRegistry)
 Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/Analog-Clock-QML-v2/Main.qml"), &QmlCacheGeneratedCode::_0x5f_Analog_0x2d_Clock_0x2d_QML_0x2d_v2_Main_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/Analog-Clock-QML-v2/Clock.qml"), &QmlCacheGeneratedCode::_0x5f_Analog_0x2d_Clock_0x2d_QML_0x2d_v2_Clock_qml::unit);
-    resourcePathToCachedUnit.insert(QStringLiteral("/Analog-Clock-QML-v2/Analogs.qml"), &QmlCacheGeneratedCode::_0x5f_Analog_0x2d_Clock_0x2d_QML_0x2d_v2_Analogs_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/Analog-Clock-QML-v2/Buttons.qml"), &QmlCacheGeneratedCode::_0x5f_Analog_0x2d_Clock_0x2d_QML_0x2d_v2_Buttons_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;

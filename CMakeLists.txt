@@ -18,7 +18,7 @@ qt_add_qml_module(appAnalog-Clock-QML-v2
     QML_FILES
         Main.qml
         QML_FILES Clock.qml
-        QML_FILES Analogs.qml
+        QML_FILES
         QML_FILES Buttons.qml
 )
 

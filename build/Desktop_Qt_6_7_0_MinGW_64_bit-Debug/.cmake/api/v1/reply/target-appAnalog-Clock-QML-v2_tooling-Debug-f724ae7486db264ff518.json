@@ -101,7 +101,7 @@
 		{
 			"backtrace" : 5,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Analog-Clock-QML-v2/Analogs.qml",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Analog-Clock-QML-v2/Buttons.qml",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -119,7 +119,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Analog-Clock-QML-v2/Analogs.qml.rule",
+			"path" : "build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Analog-Clock-QML-v2/Buttons.qml.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

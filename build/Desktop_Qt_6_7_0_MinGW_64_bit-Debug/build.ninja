@@ -47,7 +47,7 @@ cmake_ninja_workdir = D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/De
 #############################################
 # Order-only phony target for appAnalog-Clock-QML-v2
 
-build cmake_object_order_depends_target_appAnalog-Clock-QML-v2: phony || .rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp .rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp .rcc/qmlcache/appAnalog-Clock-QML-v2_Clock_qml.cpp .rcc/qmlcache/appAnalog-Clock-QML-v2_Main_qml.cpp .rcc/qmlcache/appAnalog-Clock-QML-v2_qmlcache_loader.cpp .rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp .rcc/qrc_qmake_Analog-Clock-QML-v2.cpp Analog-Clock-QML-v2/appAnalog-Clock-QML-v2.qmltypes appAnalog-Clock-QML-v2_autogen appAnalog-Clock-QML-v2_autogen/mocs_compilation.cpp appAnalog-Clock-QML-v2_autogen/timestamp appAnalog-Clock-QML-v2_autogen_timestamp_deps appAnalog-Clock-QML-v2_qmlimportscan appAnalog-Clock-QML-v2_tooling appanalog-clock-qml-v2_qmltyperegistrations.cpp meta_types/appAnalog-Clock-QML-v2_json_file_list.txt meta_types/appAnalog-Clock-QML-v2_json_file_list.txt.timestamp meta_types/qt6appanalog-clock-qml-v2_debug_metatypes.json meta_types/qt6appanalog-clock-qml-v2_debug_metatypes.json.gen
+build cmake_object_order_depends_target_appAnalog-Clock-QML-v2: phony || .rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp .rcc/qmlcache/appAnalog-Clock-QML-v2_Clock_qml.cpp .rcc/qmlcache/appAnalog-Clock-QML-v2_Main_qml.cpp .rcc/qmlcache/appAnalog-Clock-QML-v2_qmlcache_loader.cpp .rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp .rcc/qrc_qmake_Analog-Clock-QML-v2.cpp Analog-Clock-QML-v2/appAnalog-Clock-QML-v2.qmltypes appAnalog-Clock-QML-v2_autogen appAnalog-Clock-QML-v2_autogen/mocs_compilation.cpp appAnalog-Clock-QML-v2_autogen/timestamp appAnalog-Clock-QML-v2_autogen_timestamp_deps appAnalog-Clock-QML-v2_qmlimportscan appAnalog-Clock-QML-v2_tooling appanalog-clock-qml-v2_qmltyperegistrations.cpp meta_types/appAnalog-Clock-QML-v2_json_file_list.txt meta_types/appAnalog-Clock-QML-v2_json_file_list.txt.timestamp meta_types/qt6appanalog-clock-qml-v2_debug_metatypes.json meta_types/qt6appanalog-clock-qml-v2_debug_metatypes.json.gen
 
 build CMakeFiles/appAnalog-Clock-QML-v2.dir/appAnalog-Clock-QML-v2_autogen/mocs_compilation.cpp.obj: CXX_COMPILER__appAnalog-Clock-QML-v2_unscanned_Debug D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/appAnalog-Clock-QML-v2_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_appAnalog-Clock-QML-v2
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
@@ -105,14 +105,6 @@ build CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-
   OBJECT_DIR = CMakeFiles\appAnalog-Clock-QML-v2.dir
   OBJECT_FILE_DIR = CMakeFiles\appAnalog-Clock-QML-v2.dir\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.rcc\qmlcache
 
-build CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp.obj: CXX_COMPILER__appAnalog-Clock-QML-v2_unscanned_Debug D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp || cmake_object_order_depends_target_appAnalog-Clock-QML-v2
-  DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
-  DEP_FILE = CMakeFiles\appAnalog-Clock-QML-v2.dir\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.rcc\qmlcache\appAnalog-Clock-QML-v2_Analogs_qml.cpp.obj.d
-  FLAGS = -DQT_QML_DEBUG -g -fdiagnostics-color=always
-  INCLUDES = -ID:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/appAnalog-Clock-QML-v2_autogen/include -ID:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2 -isystem C:/Qt/6.7.0/mingw_64/include/QtQml/6.7.0 -isystem C:/Qt/6.7.0/mingw_64/include/QtQml/6.7.0/QtQml -isystem C:/Qt/6.7.0/mingw_64/include/QtCore/6.7.0 -isystem C:/Qt/6.7.0/mingw_64/include/QtCore/6.7.0/QtCore -isystem C:/Qt/6.7.0/mingw_64/include/QtCore -isystem C:/Qt/6.7.0/mingw_64/include -isystem C:/Qt/6.7.0/mingw_64/mkspecs/win32-g++ -isystem C:/Qt/6.7.0/mingw_64/include/QtQmlBuiltins/6.7.0 -isystem C:/Qt/6.7.0/mingw_64/include/QtQmlBuiltins/6.7.0/QtQmlBuiltins -isystem C:/Qt/6.7.0/mingw_64/include/QtQmlBuiltins -isystem C:/Qt/6.7.0/mingw_64/include/QtQml -isystem C:/Qt/6.7.0/mingw_64/include/QtQmlIntegration -isystem C:/Qt/6.7.0/mingw_64/include/QtNetwork -isystem C:/Qt/6.7.0/mingw_64/include/QtQuick -isystem C:/Qt/6.7.0/mingw_64/include/QtGui -isystem C:/Qt/6.7.0/mingw_64/include/QtQmlModels -isystem C:/Qt/6.7.0/mingw_64/include/QtOpenGL
-  OBJECT_DIR = CMakeFiles\appAnalog-Clock-QML-v2.dir
-  OBJECT_FILE_DIR = CMakeFiles\appAnalog-Clock-QML-v2.dir\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.rcc\qmlcache
-
 build CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp.obj: CXX_COMPILER__appAnalog-Clock-QML-v2_unscanned_Debug D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp || cmake_object_order_depends_target_appAnalog-Clock-QML-v2
   DEFINES = -DMINGW_HAS_SECURE_API=1 -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NEEDS_QMAIN -DQT_NETWORK_LIB -DQT_OPENGL_LIB -DQT_QMLBUILTINS_LIB -DQT_QMLINTEGRATION_LIB -DQT_QMLMODELS_LIB -DQT_QML_LIB -DQT_QUICK_LIB -DUNICODE -DWIN32 -DWIN64 -D_ENABLE_EXTENDED_ALIGNED_STORAGE -D_UNICODE -D_WIN64
   DEP_FILE = CMakeFiles\appAnalog-Clock-QML-v2.dir\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.rcc\qmlcache\appAnalog-Clock-QML-v2_Buttons_qml.cpp.obj.d
@@ -137,7 +129,7 @@ build CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-
 #############################################
 # Link the executable appAnalog-Clock-QML-v2.exe
 
-build appAnalog-Clock-QML-v2.exe: CXX_EXECUTABLE_LINKER__appAnalog-Clock-QML-v2_Debug CMakeFiles/appAnalog-Clock-QML-v2.dir/appAnalog-Clock-QML-v2_autogen/mocs_compilation.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/main.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/appanalog-clock-qml-v2_qmltyperegistrations.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qrc_qmake_Analog-Clock-QML-v2.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_qmlcache_loader.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Main_qml.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Clock_qml.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp.obj | C$:/Qt/6.7.0/mingw_64/lib/libQt6Quick.a C$:/Qt/6.7.0/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Qml.a C$:/Qt/6.7.0/mingw_64/lib/libQt6QmlBuiltins.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Network.a C$:/Qt/6.7.0/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a || appAnalog-Clock-QML-v2_autogen appAnalog-Clock-QML-v2_autogen_timestamp_deps appAnalog-Clock-QML-v2_qmlimportscan appAnalog-Clock-QML-v2_tooling
+build appAnalog-Clock-QML-v2.exe: CXX_EXECUTABLE_LINKER__appAnalog-Clock-QML-v2_Debug CMakeFiles/appAnalog-Clock-QML-v2.dir/appAnalog-Clock-QML-v2_autogen/mocs_compilation.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/main.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/appanalog-clock-qml-v2_qmltyperegistrations.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qrc_qmake_Analog-Clock-QML-v2.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_qmlcache_loader.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Main_qml.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Clock_qml.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp.obj CMakeFiles/appAnalog-Clock-QML-v2.dir/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp.obj | C$:/Qt/6.7.0/mingw_64/lib/libQt6Quick.a C$:/Qt/6.7.0/mingw_64/lib/libQt6QmlModels.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Qml.a C$:/Qt/6.7.0/mingw_64/lib/libQt6QmlBuiltins.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Network.a C$:/Qt/6.7.0/mingw_64/lib/libQt6OpenGL.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Gui.a C$:/Qt/6.7.0/mingw_64/lib/libQt6Core.a C$:/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a || appAnalog-Clock-QML-v2_autogen appAnalog-Clock-QML-v2_autogen_timestamp_deps appAnalog-Clock-QML-v2_qmlimportscan appAnalog-Clock-QML-v2_tooling
   FLAGS = -DQT_QML_DEBUG -g
   LINK_FLAGS = -mwindows
   LINK_LIBRARIES = C:/Qt/6.7.0/mingw_64/lib/libQt6Quick.a  C:/Qt/6.7.0/mingw_64/lib/libQt6QmlModels.a  C:/Qt/6.7.0/mingw_64/lib/libQt6Qml.a  C:/Qt/6.7.0/mingw_64/lib/libQt6QmlBuiltins.a  C:/Qt/6.7.0/mingw_64/lib/libQt6Network.a  -lws2_32  C:/Qt/6.7.0/mingw_64/lib/libQt6OpenGL.a  C:/Qt/6.7.0/mingw_64/lib/libQt6Gui.a  C:/Qt/6.7.0/mingw_64/lib/libQt6Core.a  -lmpr  -luserenv  -lmingw32  C:/Qt/6.7.0/mingw_64/lib/libQt6EntryPoint.a  -lshell32  -ld3d11  -ldxgi  -ldxguid  -ld3d12  -luser32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
@@ -200,7 +192,7 @@ build all_qmllint_module: phony appAnalog-Clock-QML-v2_qmllint_module
 #############################################
 # Utility command for appAnalog-Clock-QML-v2_tooling
 
-build appAnalog-Clock-QML-v2_tooling: phony Analog-Clock-QML-v2/Main.qml Analog-Clock-QML-v2/Clock.qml Analog-Clock-QML-v2/Analogs.qml Analog-Clock-QML-v2/Buttons.qml
+build appAnalog-Clock-QML-v2_tooling: phony Analog-Clock-QML-v2/Main.qml Analog-Clock-QML-v2/Clock.qml Analog-Clock-QML-v2/Buttons.qml
 
 
 #############################################
@@ -342,15 +334,6 @@ build .rcc/qmlcache/appAnalog-Clock-QML-v2_Clock_qml.cpp | ${cmake_ninja_workdir
 
 
 #############################################
-# Custom command for .rcc\qmlcache\appAnalog-Clock-QML-v2_Analogs_qml.cpp
-
-build .rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmlcachegen.exe D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml .rcc/qmake_Analog-Clock-QML-v2.qrc .rcc/appAnalog-Clock-QML-v2_raw_qml_0.qrc Analog-Clock-QML-v2/appAnalog-Clock-QML-v2.qmltypes Analog-Clock-QML-v2/qmldir || appAnalog-Clock-QML-v2_autogen appAnalog-Clock-QML-v2_autogen_timestamp_deps appAnalog-Clock-QML-v2_qmlimportscan appAnalog-Clock-QML-v2_tooling
-  COMMAND = cmd.exe /C "cd /D D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E make_directory D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache && D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.0/mingw_64/./bin/qmlcachegen.exe --bare --resource-path /Analog-Clock-QML-v2/Analogs.qml -I D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug -I C:/Qt/6.7.0/mingw_64/./qml -i D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Analog-Clock-QML-v2/qmldir --resource D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmake_Analog-Clock-QML-v2.qrc --resource D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/appAnalog-Clock-QML-v2_raw_qml_0.qrc -o D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml"
-  DESC = Generating .rcc/qmlcache/appAnalog-Clock-QML-v2_Analogs_qml.cpp
-  restat = 1
-
-
-#############################################
 # Custom command for .rcc\qmlcache\appAnalog-Clock-QML-v2_Buttons_qml.cpp
 
 build .rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp | ${cmake_ninja_workdir}.rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmlcachegen.exe D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/qmake_Analog-Clock-QML-v2.qrc .rcc/appAnalog-Clock-QML-v2_raw_qml_0.qrc Analog-Clock-QML-v2/appAnalog-Clock-QML-v2.qmltypes Analog-Clock-QML-v2/qmldir || appAnalog-Clock-QML-v2_autogen appAnalog-Clock-QML-v2_autogen_timestamp_deps appAnalog-Clock-QML-v2_qmlimportscan appAnalog-Clock-QML-v2_tooling
@@ -362,7 +345,7 @@ build .rcc/qmlcache/appAnalog-Clock-QML-v2_Buttons_qml.cpp | ${cmake_ninja_workd
 #############################################
 # Custom command for .rcc\qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp
 
-build .rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp | ${cmake_ninja_workdir}.rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp: CUSTOM_COMMAND D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/appAnalog-Clock-QML-v2_raw_qml_0.qrc C$:/Qt/6.7.0/mingw_64/./bin/rcc.exe || appAnalog-Clock-QML-v2_autogen appAnalog-Clock-QML-v2_autogen_timestamp_deps appAnalog-Clock-QML-v2_qmlimportscan appAnalog-Clock-QML-v2_tooling
+build .rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp | ${cmake_ninja_workdir}.rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp: CUSTOM_COMMAND D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/appAnalog-Clock-QML-v2_raw_qml_0.qrc C$:/Qt/6.7.0/mingw_64/./bin/rcc.exe || appAnalog-Clock-QML-v2_autogen appAnalog-Clock-QML-v2_autogen_timestamp_deps appAnalog-Clock-QML-v2_qmlimportscan appAnalog-Clock-QML-v2_tooling
   COMMAND = cmd.exe /C "cd /D D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug && C:\Qt\6.7.0\mingw_64\.\bin\rcc.exe --output D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qrc_appAnalog-Clock-QML-v2_raw_qml_0.cpp --name appAnalog-Clock-QML-v2_raw_qml_0 D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/appAnalog-Clock-QML-v2_raw_qml_0.qrc --no-zstd"
   DESC = Running rcc for resource appAnalog-Clock-QML-v2_raw_qml_0
   restat = 1
@@ -396,21 +379,21 @@ build CMakeFiles/appAnalog-Clock-QML-v2_qmltyperegistration | ${cmake_ninja_work
 #############################################
 # Custom command for CMakeFiles\appAnalog-Clock-QML-v2_qmllint
 
-build CMakeFiles/appAnalog-Clock-QML-v2_qmllint | ${cmake_ninja_workdir}CMakeFiles/appAnalog-Clock-QML-v2_qmllint: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmllint.exe D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/qmllint/appAnalog-Clock-QML-v2.rsp || all_qmltyperegistrations appAnalog-Clock-QML-v2_qmltyperegistration
+build CMakeFiles/appAnalog-Clock-QML-v2_qmllint | ${cmake_ninja_workdir}CMakeFiles/appAnalog-Clock-QML-v2_qmllint: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmllint.exe D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/qmllint/appAnalog-Clock-QML-v2.rsp || all_qmltyperegistrations appAnalog-Clock-QML-v2_qmltyperegistration
   COMMAND = cmd.exe /C "cd /D D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2 && D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.0/mingw_64/bin/qmllint.exe @D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmllint/appAnalog-Clock-QML-v2.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appAnalog-Clock-QML-v2_qmllint_json
 
-build CMakeFiles/appAnalog-Clock-QML-v2_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appAnalog-Clock-QML-v2_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmllint.exe D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/qmllint/appAnalog-Clock-QML-v2_json.rsp || all_qmltyperegistrations appAnalog-Clock-QML-v2_qmltyperegistration
+build CMakeFiles/appAnalog-Clock-QML-v2_qmllint_json | ${cmake_ninja_workdir}CMakeFiles/appAnalog-Clock-QML-v2_qmllint_json: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmllint.exe D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/qmllint/appAnalog-Clock-QML-v2_json.rsp || all_qmltyperegistrations appAnalog-Clock-QML-v2_qmltyperegistration
   COMMAND = cmd.exe /C "cd /D D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2 && D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.0/mingw_64/bin/qmllint.exe @D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmllint/appAnalog-Clock-QML-v2_json.rsp"
 
 
 #############################################
 # Custom command for CMakeFiles\appAnalog-Clock-QML-v2_qmllint_module
 
-build CMakeFiles/appAnalog-Clock-QML-v2_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appAnalog-Clock-QML-v2_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmllint.exe D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/qmllint/appAnalog-Clock-QML-v2_module.rsp || all_qmltyperegistrations appAnalog-Clock-QML-v2_qmltyperegistration
+build CMakeFiles/appAnalog-Clock-QML-v2_qmllint_module | ${cmake_ninja_workdir}CMakeFiles/appAnalog-Clock-QML-v2_qmllint_module: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmllint.exe D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml .rcc/qmllint/appAnalog-Clock-QML-v2_module.rsp || all_qmltyperegistrations appAnalog-Clock-QML-v2_qmltyperegistration
   COMMAND = cmd.exe /C "cd /D D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2 && D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.0/mingw_64/bin/qmllint.exe @D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmllint/appAnalog-Clock-QML-v2_module.rsp"
 
 
@@ -433,15 +416,6 @@ build Analog-Clock-QML-v2/Clock.qml | ${cmake_ninja_workdir}Analog-Clock-QML-v2/
 
 
 #############################################
-# Custom command for Analog-Clock-QML-v2\Analogs.qml
-
-build Analog-Clock-QML-v2/Analogs.qml | ${cmake_ninja_workdir}Analog-Clock-QML-v2/Analogs.qml: CUSTOM_COMMAND D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml
-  COMMAND = cmd.exe /C "cd /D D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2 && C:\Qt\Tools\CMake_64\bin\cmake.exe -E copy D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Analog-Clock-QML-v2/Analogs.qml"
-  DESC = Copying Analogs.qml to D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/Analog-Clock-QML-v2/Analogs.qml
-  restat = 1
-
-
-#############################################
 # Custom command for Analog-Clock-QML-v2\Buttons.qml
 
 build Analog-Clock-QML-v2/Buttons.qml | ${cmake_ninja_workdir}Analog-Clock-QML-v2/Buttons.qml: CUSTOM_COMMAND D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml
@@ -459,7 +433,7 @@ build CMakeFiles/appAnalog-Clock-QML-v2_qmlimportscan | ${cmake_ninja_workdir}CM
 #############################################
 # Custom command for .qt_plugins\Qt6_QmlPlugins_Imports_appAnalog-Clock-QML-v2.cmake
 
-build .qt_plugins/Qt6_QmlPlugins_Imports_appAnalog-Clock-QML-v2.cmake | ${cmake_ninja_workdir}.qt_plugins/Qt6_QmlPlugins_Imports_appAnalog-Clock-QML-v2.cmake: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmlimportscanner.exe .rcc/qmake_Analog-Clock-QML-v2.qrc .rcc/appAnalog-Clock-QML-v2_raw_qml_0.qrc D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Analogs.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml
+build .qt_plugins/Qt6_QmlPlugins_Imports_appAnalog-Clock-QML-v2.cmake | ${cmake_ninja_workdir}.qt_plugins/Qt6_QmlPlugins_Imports_appAnalog-Clock-QML-v2.cmake: CUSTOM_COMMAND C$:/Qt/6.7.0/mingw_64/bin/qmlimportscanner.exe .rcc/qmake_Analog-Clock-QML-v2.qrc .rcc/appAnalog-Clock-QML-v2_raw_qml_0.qrc D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Main.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Clock.qml D$:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/Buttons.qml
   COMMAND = cmd.exe /C "cd /D D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2 && D:\OneDrive\Documents\GitHub\Analog-Clock-QML-v2\build\Desktop_Qt_6_7_0_MinGW_64_bit-Debug\.qt\bin\qt_setup_tool_path.bat C:/Qt/6.7.0/mingw_64/./bin/qmlimportscanner.exe @D:/OneDrive/Documents/GitHub/Analog-Clock-QML-v2/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.qt_plugins/Qt6_QmlPlugins_Imports_appAnalog-Clock-QML-v2.rsp"
   DESC = Running qmlimportscanner for appAnalog-Clock-QML-v2
   restat = 1

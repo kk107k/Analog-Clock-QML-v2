@@ -12,20 +12,18 @@ Item {
     property bool isHourHandVisible: true
     property bool isMinuteHandVisible: true
     property string markerColor: "black"
-    property bool use24HourFormat: true // Default to 24-hour format
+    property bool use24HourFormat: true
 
 
     Buttons {
         anchors.left: parent.left
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 70
-        // Connect the signal to the function that toggles dash lines
         onToggleDashLines: {
             hourHand.dashLinesVisible = on
             minuteHand.dashLinesVisible = on
         }
 
-        // Set the text label for the hour hand button
         Text {
             text: "Dash Lines"
             color: "black"
@@ -46,7 +44,6 @@ Item {
         anchors.bottomMargin: 95
         anchors.rightMargin: 45
 
-        // Connect the signal to the function that toggles dash lines
         onToggleDashLines: {
             isDigitalTimeVisible = on
         }
@@ -85,8 +82,8 @@ Item {
 
     Buttons {
             id: minuteHandButton
-            anchors.right: parent.right // Position the button to the right
-            anchors.verticalCenter: parent.verticalTop // Center vertically
+            anchors.right: parent.right
+            anchors.verticalCenter: parent.verticalTop
             anchors.rightMargin: 45
 
             onToggleHourHand: {
@@ -105,16 +102,14 @@ Item {
                 }
         }
 
-    // Function to switch to 12-hour format
     function switchTo12HourFormat() {
         use24HourFormat = false;
-        updateDigitalTime(); // Call updateDigitalTime to apply format changes
+        updateDigitalTime();
     }
 
-    // Function to switch to 24-hour format
     function switchTo24HourFormat() {
         use24HourFormat = true;
-        updateDigitalTime(); // Call updateDigitalTime to apply format changes
+        updateDigitalTime();
     }
 
     Row {
@@ -256,16 +251,17 @@ Item {
         }
     }
 
-    // Update digital time display based on clock format
     function updateDigitalTime() {
         if (use24HourFormat) {
             digitalTime.text = formatHours(hours) + ":" + (minutes < 10 ? "0" + minutes : minutes);
+            ampmText.visible = false;
         } else {
-            digitalTime.text = formatHours(hours) + ":" + (minutes < 10 ? "0" + minutes : minutes) + " " + getAMPM();
+            digitalTime.text = formatHours(hours) + ":" + (minutes < 10 ? "0" + minutes : minutes);
+            ampmText.text = getAMPM();
+            ampmText.visible = true;
         }
     }
 
-    // Function to format hours based on the clock format
     function formatHours(hour) {
         if (use24HourFormat) {
             return hour < 10 ? "0" + hour : hour;
@@ -280,7 +276,6 @@ Item {
         }
     }
 
-    // Function to determine AM/PM for 12-hour format
     function getAMPM() {
         return hours < 12 ? "AM" : "PM";
     }
@@ -298,7 +293,7 @@ Item {
 
         // Hour Markers
         Repeater {
-            model: 12 // One for each hour
+            model: 12
             delegate: Rectangle {
                 width: 4
                 height: 16
@@ -309,60 +304,53 @@ Item {
                 transform: Rotation {
                     origin.y: clockFace.radius - 30
                     origin.x: width / 2
-                    angle: index * 30 // 360 / 12 = 30 degrees per hour
+                    angle: index * 30
                 }
             }
         }
 
 
-        // Minute Markers
         Repeater {
-            model: 60 // One for each minute
+            model: 60
             delegate: Rectangle {
-                width: 2  // Thinner than hour markers
-                height: 12  // Shorter than hour markers
+                width: 2
+                height: 12
                 color: markerColor
-                visible: (index % 5 !== 0) // Hide every 5th line to not overlap with hour markers
+                visible: (index % 5 !== 0)
                 anchors.top: parent.top
                 anchors.topMargin: 30
                 anchors.horizontalCenter: parent.horizontalCenter
                 transform: Rotation {
                     origin.y: clockFace.radius - 30
                     origin.x: width / 2
-                    angle: index * 6 // 360 / 60 = 6 degrees per minute
+                    angle: index * 6
                 }
             }
         }
 
-        // Hour Text
         Repeater {
-            model: 12 // One for each hour
+            model: 12
             delegate: Text {
                 text: index === 0 ? "12" : index.toString()
                 font.pixelSize: 50
                 color: "black"
-                // Calculate the position for each number
                 x: clockFace.radius + Math.cos((index - 3) * Math.PI / 6) * (clockFace.radius - 70) - width / 2
                 y: clockFace.radius + Math.sin((index - 3) * Math.PI / 6) * (clockFace.radius - 70) - height / 2
             }
         }
 
-        // Minute Text
         Repeater {
-            model: 60 // One for each minute
+            model: 60
             delegate: Text {
                 text: index === 0 ? "00" : (index < 5 ? "0" + index.toString() : index.toString())
                 font.pixelSize: 15
                 visible: (index % 5 == 0)
                 color: "white"
-                // Calculate the position for each minute marker
                 x: clockFace.radius + Math.cos((index - 15) * Math.PI / 30) * (clockFace.radius - 15) - width / 2
                 y: clockFace.radius + Math.sin((index - 15) * Math.PI / 30) * (clockFace.radius - 15) - height / 2
             }
         }
 
-
-        // Hour hand
         Rectangle {
             id: hourHand
             width: 15
@@ -375,7 +363,6 @@ Item {
             property bool dashLinesVisible: true
 
 
-            // Dash lines for the Hour hand
             Rectangle {
                 width: 80
                 height: 88
@@ -386,31 +373,29 @@ Item {
                 radius: width / 2
 
                 Repeater {
-                    model: 30 // Adjust the number of dashes
+                    model: 30
                     Rectangle {
-                        width: 2 // Adjust the width of each dash
-                        height: 6 // Adjust the height of each dash
-                        color: "grey" // Adjust the color of the dashes
+                        width: 2
+                        height: 6
+                        color: "grey"
                         opacity: 0.5
                         x: parent.width / 2 + (parent.width / 2 - width) * Math.cos(index * 15 * Math.PI / 180)
                         y: parent.height / 2 + (parent.height / 2 - height) * Math.sin(index * 15 * Math.PI / 180)
                         transformOrigin: Item.TopLeft
-                        rotation: index * 15 // Adjust the rotation angle
+                        rotation: index * 15
                         visible: parent.parent.dashLinesVisible
                     }
                 }
 
-                // Dashed line coming down the middle
                 Repeater {
-                    model: 10 // Adjust the number of dashes
+                    model: 10
                     Rectangle {
-                        width: 2 // Adjust the width of each dash
-                        height: 6 // Adjust the height of each dash
-                        color: "grey" // Adjust the color of the dashes
+                        width: 2
+                        height: 6
+                        color: "grey"
                         opacity: 0.5
                         x: parent.width / 2 - width / 2
-                        y: height * index * 1.7 // Spacing between dashes
-                        transformOrigin: Item.TopLeft
+                        y: height * index * 1.7
                         visible: parent.parent.dashLinesVisible
                     }
                 }
@@ -435,22 +420,26 @@ Item {
                         if (!hourPaused) return;
                         let deltaX = mouseX - hourCoordinateX;
                         if (deltaX !== 0) {
-                            hourHand.rotation = initialRotation + deltaX / 4;
+                            let newRotation = initialRotation + deltaX / 4;
+                            // Allowing multiple rounds of 360 degrees
+                            newRotation = newRotation >= 0 ? newRotation % 720 : 720 + (newRotation % 720);
 
-                            // Calculate minute hand rotation based on minute component
-                            let currentHour = Math.floor(hourHand.rotation / 30);
-                            let currentMinute = (hourHand.rotation % 30) * 2;
-                            minuteHand.rotation = currentMinute * 6; // 360 / 60
+                            hourHand.rotation = newRotation;
+
+                            let currentHour = Math.floor(newRotation / 30); // Adjusted for 24-hour format
+                            let currentMinute = (newRotation % 30) * 2;
+                            minuteHand.rotation = currentMinute * 6;
 
                             updateClockTime();
                         }
                     }
 
                 }
+
             }
         }
 
-        // Minute hand
+        // Minute Hand
         Rectangle {
             id: minuteHand
             width: 15
@@ -462,8 +451,7 @@ Item {
             visible: isMinuteHandVisible
             property bool dashLinesVisible: true
 
-
-            // Dash lines for the minute hand
+            // Minute Hand Circular Dash Lines
             Rectangle {
                 width: 80
                 height: 88
@@ -475,52 +463,73 @@ Item {
 
 
                 Repeater {
-                    model: 30 // Adjust the number of dashes
+                    model: 30
                     Rectangle {
-                        width: 2 // Adjust the width of each dash
-                        height: 6 // Adjust the height of each dash
-                        color: "grey" // Adjust the color of the dashes
+                        width: 2
+                        height: 6
+                        color: "grey"
                         opacity: 0.5
                         x: parent.width / 2 + (parent.width / 2 - width) * Math.cos(index * 15 * Math.PI / 180)
                         y: parent.height / 2 + (parent.height / 2 - height) * Math.sin(index * 15 * Math.PI / 180)
                         transformOrigin: Item.TopLeft
-                        rotation: index * 15 // Adjust the rotation angle
+                        rotation: index * 15
                         visible: parent.parent.dashLinesVisible
                     }
                 }
 
                 MouseArea {
                     anchors.fill: parent
-
-                    property real minuteCoordinateX: 0
+                    property real hourCoordinateX: 0
                     property real initialRotation: 0
+                    property real prevRotation: 0
+                    property int fullCycles: 0
 
                     onPressed: {
-                        minuteCoordinateX = mouseX
-                        initialRotation = minuteHand.rotation
-                        minutePaused = true
+                        hourCoordinateX = mouseX
+                        initialRotation = hourHand.rotation
+                        prevRotation = initialRotation
+                        hourPaused = true
                     }
 
                     onReleased: {
-                        minutePaused = false
+                        hourPaused = false
                     }
 
                     onPositionChanged: {
-                        if (!minutePaused) return;
-                        let deltaX = mouseX - minuteCoordinateX;
-                        if (deltaX !== 0) {
-                            let newRotation = initialRotation + deltaX / 4;
-                            // Ensure rotation is within [0, 360) range
-                            minuteHand.rotation = newRotation >= 0 ? newRotation % 360 : 360 - (-newRotation % 360);
-                            print(hourHand.rotation)
-                            hourHand.rotation = minuteHand.rotation / 12;
-                            print(hourHand.rotation)
-                            updateClockTime();
+                        if (!hourPaused) return;
+                        let deltaX = mouseX - hourCoordinateX;
+                        let newRotation = initialRotation + deltaX / 90;
+                        newRotation = newRotation >= 0 ? newRotation % 360 : 360 + (newRotation % 360);
+
+                        let rotationChange = newRotation - prevRotation;
+                        prevRotation = newRotation;
+
+                        let rotationsPassed = Math.floor((initialRotation + deltaX / 4) / 360);
+                        if (rotationChange > 180) {
+                            rotationsPassed--;
+                        } else if (rotationChange < -180) {
+                            rotationsPassed++;
                         }
+
+                        if (rotationsPassed != fullCycles) {
+                            hourHand.rotation = (hourHand.rotation + 30 * rotationsPassed) % 360; // Each hour is 30 degrees
+                            fullCycles = rotationsPassed;
+                        }
+
+                        hourHand.rotation = newRotation;
+
+                        // Update minute hand rotation based on hour hand rotation
+                        let currentHour = Math.floor(hourHand.rotation / 30);
+                        let currentMinute = (hourHand.rotation % 30) * 2;
+                        minuteHand.rotation = currentMinute * 6; // 360 / 60
+
+                        updateClockTime();
                     }
-
-
                 }
+
+
+
+
 
             }
         }
@@ -537,10 +546,9 @@ Item {
         }
 
 
-
-        // Digital Time Display
+        // Digital Time
         Item {
-            width: digitalTime.width + 20 // Adjust width and height as needed
+            width: digitalTime.width + 20
             height: digitalTime.height
             visible: isDigitalTimeVisible
             anchors {
@@ -558,19 +566,33 @@ Item {
             }
 
             Text {
-                id: digitalTime
-                visible: parent.visible
-                text: {
-                    return (hours == 0 ? "12" : hours) + ":" +
-                           (minutes < 10 ? "0" + minutes : minutes);
+                    id: digitalTime
+                    visible: parent.visible
+                    text: {
+                        return (hours == 0 ? "12" : hours) + ":" +
+                               (minutes < 10 ? "0" + minutes : minutes);
+                    }
+                    font.pixelSize: 40
+                    color: "black"
+                    anchors {
+                        horizontalCenter: parent.horizontalCenter
+                        verticalCenter: parent.verticalCenter
+                    }
                 }
-                font.pixelSize: 40
-                color: "black"
-                anchors {
-                    horizontalCenter: parent.horizontalCenter
-                    verticalCenter: parent.verticalCenter
+
+                Text {
+                    id: ampmText
+                    visible: parent.visible && !use24HourFormat
+                    text: getAMPM()
+                    font.pixelSize: 14
+                    opacity: 0.7
+                    color: "black"
+                    anchors {
+                        top: digitalTime.bottom
+                        horizontalCenter: digitalTime.horizontalCenter
+                    }
+
                 }
-            }
         }
 
 
@@ -578,26 +600,20 @@ Item {
     }
 
     function updateClockTime() {
-           // Calculate hours and minutes based on the rotation of hour and minute hands
-           hours = hourHand.rotation / 30; // 360 / 12 = 30 degrees per hour
-           minutes = minuteHand.rotation / 6; // 360 / 60 = 6 degrees per minute
-
-           // Reset minutes if they exceed 59
+           hours = Math.floor(hourHand.rotation / 30);
+           minutes = Math.floor(minuteHand.rotation / 6);
            minutes = minutes % 60;
-
-           // Update digital time display
            updateDigitalTime();
        }
 
 
 
     Timer {
-        interval: 1000 // Milliseconds
+        interval: 1000
         running: true
         repeat: true
         onTriggered: {
             if (!hourPaused && !minutePaused) {
-                // Update time
                 seconds++;
                 if (seconds >= 60) {
                     seconds = 0;
@@ -611,20 +627,17 @@ Item {
                     }
                 }
 
-                // Calculate rotations
-                var secondRotation = seconds * 6; // 360 / 60
-                var minuteRotation = ((minutes * 6) + (seconds / 10)) + ((hours % 12) * 30 / 60); // Minute hand: (360 / 60) + (360 / 60 / 10) + (360 / 12 / 60)
-                var hourRotation = ((hours % 12) * 30) + ((minutes / 2) + (seconds / 120)); // Hour hand: (360 / 12) + (360 / 60 / 2) + (360 / 60 / 120)
+                var secondRotation = seconds * 6;
+                var minuteRotation = ((minutes * 6) + (seconds / 10)) + ((hours % 24) * 30 / 60);
+                var hourRotation = ((hours % 24) * 30) + ((minutes / 2) + (seconds / 120));
 
 
-                // Apply rotations to clock hands
                 secondHand.rotation = secondRotation;
                 minuteHand.rotation = minuteRotation;
                 hourHand.rotation = hourRotation;
 
-                // Update digital time display
-                updateDigitalTime();
-            }    // Call the function to test hour hand synchronization
+                updateClockTime();
+            }
         }
     }
 
